@@ -1,0 +1,44 @@
+.container {
+    background-color: yellow;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "nav header header header header"
+        "nav section section section section"
+        "footer footer footer footer span"
+
+    ;
+
+
+    .item {
+        background-color: orange;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    header {
+        grid-area: header;
+        height: 150px;
+    }
+
+    nav {
+        height: 800px;
+        grid-area: nav;
+    }
+
+    section {
+        height: 600px;
+        grid-area: section;
+    }
+
+    footer {
+        height: 100px;
+        grid-area: footer;
+    }
+
+    span {
+        height: 100px;
+        grid-area: span;
+    }
